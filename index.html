@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <header class="container mt-5">
+      <ul>
+        <li><img src="images/Logo.png" alt="" /></li>
+        <li class="li-sentence">Главная</li>
+        <li class="li-sentence">Каталог</li>
+        <li class="li-sentence">Оптовая продажа</li>
+        <li class="li-sentence">О нас</li>
+      </ul>
+      <ul class="d-flex gap-5">
+        <li class="li-sentence">
+          <img src="images/phone-call-1.png" alt="pic" /> +7 (966) 55 88 499
+        </li>
+        <li><img src="images/heart.png" alt="pic" /></li>
+
+        <li>
+          <a href="cart.html"> <img src="images/savat.png" alt="pic" /> </a>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <hr class="container" />
+      <h5 class="container mt-4">
+        Главная / <span class="katalog">Каталог</span>
+      </h5>
+    </section>
+    <section class="container hero-section">
+      <div class="hero-style">
+        <div>
+          <div>
+            <h3 class="hero-sec-title mt-5">
+              Накладные электронные замки <span class="title-num">(854)</span>
+            </h3>
+          </div>
+          <div class="d-flex gap-5 mt-4">
+            <p class="box">Сбросить фильтры</p>
+            <p>
+              Электронные кодовые замки <img src="images/Cross.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <ul class="filter-buttons list-unstyled mt-4">
+          <li>
+            <button class="filter-btn" data-category="single-door">
+              Single Door
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" data-category="double-door">
+              Double Door
+            </button>
+          </li>
+          <li><button class="filter-btn" data-category="all">All</button></li>
+        </ul>
+      </div>
+      <div class="top-cards"></div>
+    </section>
+    <section filter_product>
+      <div class="filter">
+        <h3 style="color: rgb(207, 196, 196)">Фильтр</h3>
+        <div class="filter-group">
+          <h4 class="chena">Цена</h4>
+          <input type="text" class="minPrice" placeholder="Мин" value="7900" />
+          |
+          <input
+            type="text"
+            class="maxPrice"
+            placeholder="Макс"
+            value="24500"
+          />
+        </div>
+        <div class="filter-group">
+          <h4 class="h4-filtergr">Особенности</h4>
+        </div>
+        <div class="filter-group">
+          <h4 class="h4-filtergr">Цвет</h4>
+        </div>
+        <div class="filter-group">
+          <h4 class="h4-filtergr">Материал</h4>
+        </div>
+        <div class="filter-group">
+          <h4 class="h4-filtergr">Размеры</h4>
+        </div>
+      </div>
+    </section>
+    <template id="template">
+      <a href="#" class="card-link">
+        <div class="card">
+          <img class="picture" src="images/img-product.png" alt="pic" />
+          <div class="template-star">
+            <img class="stars" src="images/startsss.svg" alt="" />
+            <p>(12) отзывов</p>
+          </div>
+          <h3 class="titleproduct">Вариативный замок Golden Soft для отеля</h3>
+          <div class="template-star">
+            <h3 class="price">7 000₽</h3>
+            <h3 class="discountpayment">6000</h3>
+            <img class="sales-p" src="images/saleposition.png" alt="" />
+            <img class="list-p" src="images/list.png" alt="pic" />
+            <img class="podarol-p" src="images/podarok.png" alt="" />
+
+            <ul class="catagories"></ul>
+          </div>
+          
+        </div>
+      </a>
+    </template>
+    <section>
+      <div class="style-div">
+        <h3 class="title-need">Вы недавно просмотрели</h3>
+        <img class="mt-5" src="images/arrows.png" alt="pic" />
+      </div>
+      <div class="none">
+        <div class="card">
+          <img class="picture" src="images/img-product.png" alt="pic" />
+          <div class="template-star">
+            <img class="stars" src="images/startsss.svg" alt="" />
+            <p>(12) отзывов</p>
+          </div>
+          <h3 class="titleproduct">Вариативный замок Golden Soft для отеля</h3>
+          <div class="template-star">
+            <h3 class="price">7 000₽</h3>
+            <h3 class="discountpayment">6000</h3>
+            <img class="sales-p" src="images/saleposition.png" alt="" />
+            <img class="list-p" src="images/list.png" alt="pic" />
+            <img class="podarol-p" src="images/podarok.png" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img class="picture" src="images/img-product.png" alt="pic" />
+          <div class="template-star">
+            <img class="stars" src="images/startsss.svg" alt="" />
+            <p>(12) отзывов</p>
+          </div>
+          <h3 class="titleproduct">Вариативный замок Golden Soft для отеля</h3>
+          <div class="template-star">
+            <h3 class="price">7 000₽</h3>
+            <h3 class="discountpayment">6000</h3>
+            <img class="sales-p" src="images/saleposition.png" alt="" />
+            <img class="list-p" src="images/list.png" alt="pic" />
+            <img class="podarol-p" src="images/podarok.png" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img class="picture" src="images/img-product.png" alt="pic" />
+          <div class="template-star">
+            <img class="stars" src="images/startsss.svg" alt="" />
+            <p>(12) отзывов</p>
+          </div>
+          <h3 class="titleproduct">Вариативный замок Golden Soft для отеля</h3>
+          <div class="template-star">
+            <h3 class="price">7 000₽</h3>
+            <h3 class="discountpayment">6000</h3>
+            <img class="sales-p" src="images/saleposition.png" alt="" />
+            <img class="list-p" src="images/list.png" alt="pic" />
+            <img class="podarol-p" src="images/podarok.png" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img class="picture" src="images/img-product.png" alt="pic" />
+          <div class="template-star">
+            <img class="stars" src="images/startsss.svg" alt="" />
+            <p>(12) отзывов</p>
+          </div>
+          <h3 class="titleproduct">Вариативный замок Golden Soft для отеля</h3>
+          <div class="template-star">
+            <h3 class="price">7 000₽</h3>
+            <h3 class="discountpayment">6000</h3>
+            <img class="sales-p" src="images/saleposition.png" alt="" />
+            <img class="list-p" src="images/list.png" alt="pic" />
+            <img class="podarol-p" src="images/podarok.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="phne-sec">
+        <div class="padding-style">
+          <h3 class="title-paragripgt">Eget quis quam metus, scelerisque.</h3>
+          <p class="p-p">
+            Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+            porttitor molestie massa porttitor. Quisque at turpis ut proin eu et
+            magna etiam rhoncus.
+          </p>
+
+          <p class="p-p">
+            pAc risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+            interdum in leo. Nullam ullamcorper id enim fermentum integer
+            praesent bibendum. In ullamcorper purus scelerisque malesuada et
+            egestas. Ac dictumst mauris sed facilisis.
+          </p>
+        </div>
+        <div><img src="images/neede doorpic.png" alt="" /></div>
+      </div>
+      <div class="airpods-sec">
+        <div><img src="images/airpods.png" alt="pic" /></div>
+        <div class="padding-style">
+          <h3 class="title-paragripgt">Eget quis quam metus, scelerisque.</h3>
+          <p class="p-p">
+            Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+            porttitor molestie massa porttitor. Quisque at turpis ut proin eu et
+            magna etiam rhoncus.
+          </p>
+
+          <p class="p-p">
+            pAc risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+            interdum in leo. Nullam ullamcorper id enim fermentum integer
+            praesent bibendum. In ullamcorper purus scelerisque malesuada et
+            egestas. Ac dictumst mauris sed facilisis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="call-sec">
+        <div>
+          <h2 class="footer-title">Мы Вам перезвоним</h2>
+          <p class="footer-paragripth">
+            Если у вас возникли какие-то вопросы или проблемы, заполните форму и
+            мы Вам перезвоним.
+          </p>
+          <div class="input-div" style="justify-content: space-around">
+            <input class="input2" placeholder="Ваше имя" type="text" />
+            <input placeholder="Ваш Email" type="text" />
+
+            <button class="button-sent">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-style">
+        <img class="footerimg" src="images/Logo.png" alt="pic" />
+        <img src="images/Frame 4075216.png" alt="" />
+      </div>
+      <div>
+        <h3 class="h3-footer">Навигация</h3>
+        <h3 class="text-footer">Главная</h3>
+        <h3 class="text-footer">Каталог</h3>
+        <h3 class="text-footer">Оптовая продажа</h3>
+        <h3 class="text-footer">О нас</h3>
+      </div>
+      <div>
+        <h3 class="h3-footer">Наши контакты</h3>
+        <h3 class="text-footer">Телефоны</h3>
+        <h3 class="text-footer">+375 33 662 82 56</h3>
+        <h3 class="text-footer">+375 33 662 82 56</h3>
+        <h3 class="text-footer">Email</h3>
+        <h3 class="text-footer">vladpertcev@mail.ru</h3>
+        <h3 class="text-footer">vladpertcev@mail.ru</h3>
+      </div>
+      <div>
+        <h3 class="h3-footer">Наш адрес</h3>
+        <h3 class="text-footer">Россия</h3>
+        <h3 class="text-footer">Ростов-на-Дону ул.</h3>
+        <h3 class="text-footer">Богачева 16</h3>
+        <h3 class="text-footer">О нас</h3>
+      </div>
+      <div>
+        <h3 class="h3-footer">информация</h3>
+        <h3 class="text-footer">Доставка и оплата</h3>
+        <h3 class="text-footer">Гарантии</h3>
+        <h3 class="text-footer">Оптовая продажа</h3>
+        <h3 class="text-footer">Возврат товара</h3>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="product.html" />
+    <script src="index.js"></script>
+  </body>
+</html>
